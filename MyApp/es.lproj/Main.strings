@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "You like?"; ObjectID = "79S-4t-My7"; */
+"79S-4t-My7.normalTitle" = "¿Es bueno?";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "SYm-5O-ubi"; */
+"SYm-5O-ubi.text" = "Hola";
+
+/* Class = "UILabel"; text = "You have sold 1000 apps in 2 months"; ObjectID = "UdN-S9-4LU"; */
+"UdN-S9-4LU.text" = "Has vendido 1000 aplicaciones en 20 meses";
