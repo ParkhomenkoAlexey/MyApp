@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYm-5O-ubi">
+                                <rect key="frame" x="168" y="92" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79S-4t-My7">
+                                <rect key="frame" x="16" y="134" width="343" height="30"/>
+                                <state key="normal" title="You like?"/>
+                                <connections>
+                                    <action selector="likeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8U-zC-wkW"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have sold 1000 apps in 2 months" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-S9-4LU">
+                                <rect key="frame" x="16" y="208" width="343" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iLikeIt" translatesAutoresizingMaskIntoConstraints="NO" id="7Jj-uS-atw">
+                                <rect key="frame" x="-6" y="272" width="387" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Jj-uS-atw" secondAttribute="height" multiplier="73:43" id="qct-nF-FBa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7Jj-uS-atw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="387:812" id="3Df-Oo-ITQ"/>
+                            <constraint firstItem="79S-4t-My7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cot-fB-Ftf"/>
+                            <constraint firstItem="SYm-5O-ubi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PPB-UG-urL"/>
+                            <constraint firstItem="UdN-S9-4LU" firstAttribute="top" secondItem="79S-4t-My7" secondAttribute="bottom" constant="44" id="Qhp-ML-t5L"/>
+                            <constraint firstItem="SYm-5O-ubi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="Zy8-oQ-x0C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="79S-4t-My7" secondAttribute="trailing" constant="16" id="a3B-i8-tS8"/>
+                            <constraint firstItem="79S-4t-My7" firstAttribute="top" secondItem="SYm-5O-ubi" secondAttribute="bottom" constant="21" id="e8f-pN-7YM"/>
+                            <constraint firstItem="UdN-S9-4LU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="q7p-Ca-buP"/>
+                            <constraint firstItem="7Jj-uS-atw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qE9-Kq-LsO"/>
+                            <constraint firstItem="7Jj-uS-atw" firstAttribute="top" secondItem="UdN-S9-4LU" secondAttribute="bottom" constant="43.666666666666657" id="stK-yJ-zPK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UdN-S9-4LU" secondAttribute="trailing" constant="16" id="t49-r7-KWs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="7Jj-uS-atw" id="xQ3-I2-4DT"/>
+                        <outlet property="likeButton" destination="79S-4t-My7" id="v8j-OK-wJh"/>
+                        <outlet property="salesCountLabel" destination="UdN-S9-4LU" id="N75-cd-2rO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="137.4384236453202"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iLikeIt" width="300" height="228"/>
+    </resources>
 </document>
