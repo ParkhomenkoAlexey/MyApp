@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MyApp
+
+  Created by Алексей Пархоменко on 24.04.2020.
+  Copyright © 2020 Алексей Пархоменко. All rights reserved.
+*/
+
+"You have sold 1000 apps in %d months" = "Вы продали %@ приложений за %d месяцев";
+"You like?" = "Вам нравится?";
+"imageName" = "iLikeIt";
+
+
